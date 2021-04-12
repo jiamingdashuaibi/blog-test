@@ -119,3 +119,8 @@ select * from test as t left join test_uid as u
 // right join 右外连接
 select * from test as t right join test_uid as u
 		on t.uid = u.id
+
+
+//自连接  面试问过  树状结构的数据   上下级关系
+
+select a.name,b.name from diqu as a join diqu as b on a.uid = b.id;
